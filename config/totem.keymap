@@ -16,6 +16,10 @@
 #define Base        0
 #define Nav         1
 #define Sym         2
+#define Fun         3
+#define Game        4
+#define Gameplus    5
+
 &mt {
     quick-tap-ms = <100>;
     global-quick-tap;
@@ -68,16 +72,44 @@
             >;
         };
 
-        Sym {
+         Sym {
             display-name = "Sym";
             bindings = <
                 &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT  &kp DQT
-                &trans    &trans  &trans    &trans      &kp KP_EQUA       &mkp LCLK     &mmv MOVE_UP         &mkp RCLK     &kp LEFT_BRACKET   &kp RIGHT_BRACKET
+                &trans    &trans  &trans    &trans      &trans         &mkp LCLK     &mmv MOVE_UP         &mkp RCLK     &kp LEFT_BRACKET   &kp RIGHT_BRACKET
 &studio_unlock  &trans    &trans  &trans    &trans      &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN      &mmv MOVE_RIGHT          &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp HOME
                                   &trans    &trans      &trans         &trans     &trans         &trans
             >;
         };
 
-   
+        Fun {
+            display-name = "Fun";
+            bindings = <
+        &bootloader  &trans  &trans  &trans  &to 4     &trans  &trans  &trans  &kp END  &kp F1
+        &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F10
+&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F20  &kp F7
+                             &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        Gaming {
+            display-name = "Game";
+            bindings = <
+            &kp Z           &kp X  &kp C      &kp V         &sl 5     &trans  &trans  &trans  &trans  &trans
+            &kp TAB         &kp Q  &kp W      &kp E         &kp R     &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &kp LEFT_SHIFT  &kp A  &kp S      &kp D         &kp F     &trans  &trans  &trans  &trans  &trans  &trans
+                                   &kp LCTRL  &kp LEFT_ALT  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        Gaming+ {
+            display-name = "Game+";
+            bindings = <
+        &kp F10  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp T     &kp RA(RC(Y))  &kp RA(RC(U))  &trans  &trans  &kp LC(RA(DEL))
+        &kp L    &kp O         &kp Y         &kp K         &kp G     &kp F5         &kp F7         &trans  &trans  &kp F12
+&trans  &to 0    &trans        &trans        &trans        &trans    &trans         &trans         &trans  &trans  &kp F22          &kp LA(F4)
+                               &kp J         &kp I         &kp M     &trans         &trans         &trans
+            >;
+        };
     };
 };
