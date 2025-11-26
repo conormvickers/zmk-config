@@ -1,11 +1,12 @@
-# eiga's zmk-config
+# Testing small change
 
 ### Table of contents
+
 - Branches
-    - [Corne](#corne)
-    - [Charybdis](#charybdis)
-        - [Module documentation](#module-documentation)
-    - [TOTEM](#totem)
+  - [Corne](#corne)
+  - [Charybdis](#charybdis)
+    - [Module documentation](#module-documentation)
+  - [TOTEM](#totem)
 - [Dongle Flashing](#dongle-flashing)
 - [ZMK Keymap Editor](#zmk-keymap-editor)
 - [Shops and Useful links](#shops-and-other-useful-links)
@@ -37,11 +38,11 @@ Additionally, this repository contains alternative configurations meant to be us
 ### Module documentation
 
 - Charybdis
-    - [ZMK PMW3610 Driver](https://github.com/inorichi/zmk-pmw3610-driver)
+  - [ZMK PMW3610 Driver](https://github.com/inorichi/zmk-pmw3610-driver)
 - Charybdis Dongle
-    - [ZMK Split Peripheral Input Relay](https://github.com/badjeff/zmk-split-peripheral-input-relay)
-    - [ZMK Input Behavior Listener](https://github.com/badjeff/zmk-input-behavior-listener)
-    - [ZMK PMW3610 Driver](https://github.com/badjeff/zmk-pmw3610-driver)
+  - [ZMK Split Peripheral Input Relay](https://github.com/badjeff/zmk-split-peripheral-input-relay)
+  - [ZMK Input Behavior Listener](https://github.com/badjeff/zmk-input-behavior-listener)
+  - [ZMK PMW3610 Driver](https://github.com/badjeff/zmk-pmw3610-driver)
 
 > [!NOTE]  
 > Charybdis uses Inorichi's PMW3610 driver, while Charybdis Dongle leverages multiple modules written by badjeff.
@@ -73,6 +74,7 @@ Nick Coutsos' [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/) is a
 ## Shops and other useful links
 
 Kits, Prebuilts, Parts:
+
 - [kbd.news](https://kbd.news/vendors) - mechanical keyboard vendors list
 - [42keebs.eu](http://42keebs.eu/) - diy kits, including Corne, switches and other parts
 - [keeb.supply](https://keeb.supply/) - diy kits and prebuilts, including TOTEM, tools and other parts
@@ -81,5 +83,6 @@ Kits, Prebuilts, Parts:
 - [typeractive.xyz](https://typeractive.xyz/) - diy kits and prebuilts, including Corne w/ nice!views, switches, tools and other parts
 
 Documentation and guides:
+
 - [ZMK Firmware Documentation](https://zmk.dev/docs)
 - [Eren's Wireless Charybdis Mini Guide](https://github.com/erenatas/charybdis-wireless-3x6)
